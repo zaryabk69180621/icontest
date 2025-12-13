@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span><%= location %></span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><%= email %></span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span><%= phone %></span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/<%= phone.replace(/[^0-9]/g, '') %>" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="/" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1><%= collegeName %></h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="/admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link <%= activePage === 'home' ? 'active' : '' %>">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about" class="nav-link <%= activePage === 'about' ? 'active' : '' %>">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/messages" class="nav-link <%= activePage === 'messages' ? 'active' : '' %>">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/programs" class="nav-link <%= activePage === 'programs' ? 'active' : '' %>">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admissions" class="nav-link <%= activePage === 'admissions' ? 'active' : '' %>">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/faculty" class="nav-link <%= activePage === 'faculty' ? 'active' : '' %>">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/resources" class="nav-link <%= activePage === 'resources' ? 'active' : '' %>">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="/skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="/library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="/computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="/clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/gallery" class="nav-link <%= activePage === 'gallery' ? 'active' : '' %>">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="nav-link <%= activePage === 'contact' ? 'active' : '' %>">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Imperial College of Nursing</h1>
+            <p class="hero-subtitle">Kabal, Swat - Excellence in Nursing Education Since 2020</p>
+            <p>Premier institution for nursing education in Swat Valley, producing highly skilled healthcare professionals with compassion, competence, and commitment to serve the community.</p>
+            <div class="hero-actions">
+                <a href="/admissions" class="btn-primary">
+                    <i class="fas fa-file-alt"></i> Apply Now
+                </a>
+                <a href="/programs" class="btn-secondary">
+                    <i class="fas fa-graduation-cap"></i> View Programs
+                </a>
+                <a href="/contact" class="btn-outline">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <canvas id="medicalCanvas"></canvas>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item fade-in">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Degree Program</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Practical Training</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Years since established</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Upcoming Programs</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Affiliations Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Accreditation & Affiliations</h2>
+            <p class="section-subtitle">Recognized by leading healthcare education bodies</p>
+        </div>
+        
+        <div class="affiliations-grid">
+            <div class="affiliation-card fade-in">
+                    <img class="affiliation-icon" style="background: var(--light-gray); border-radius: 2px;width: 120px;" src="images/KMU-Logo.png" alt="">
+                <h3 class="affiliation-name">Khyber Medical University</h3>
+                <p class="affiliation-desc">Fully affiliated with KMU for academic excellence and standardized curriculum following international nursing education standards.</p>
+            </div>
+            
+            <div class="affiliation-card fade-in">
+                <img class="affiliation-icon"  src="images/pnc.png" alt="">
+                <h3 class="affiliation-name">Pakistan Nursing Council</h3>
+                <p class="affiliation-desc">PNC approved institution ensuring quality nursing education standards and professional registration for graduates.</p>
+            </div>
+            
+            <div class="affiliation-card fade-in">
+                <img src="images/hera.png" class="affiliation-icon" alt="">
+                <h3 class="affiliation-name">Higher Education Regulatory Authority</h3>
+                <p class="affiliation-desc">HERA certified for maintaining higher education standards in Khyber Pakhtunkhwa with quality assurance in curriculum.</p>
+            </div>
+            
+            <div class="affiliation-card fade-in">
+                <img src="images/kphf.png" class="affiliation-icon" alt="">
+
+                <h3 class="affiliation-name">KPK Health Foundation</h3>
+                <p class="affiliation-desc">Strategic partnership for healthcare education, clinical training, and community health initiatives across Khyber Pakhtunkhwa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Preview -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Programs</h2>
+            <p class="section-subtitle">Comprehensive nursing education for aspiring healthcare professionals</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card neon-border-blue fade-in">
+                <div class="card-image">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Generic BSc Nursing (GBSN)</h3>
+                    <p class="card-text">4-year comprehensive program with theoretical knowledge and extensive clinical practice in affiliated hospitals. Prepares students for professional nursing practice.</p>
+                    <a href="/programs" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="card neon-border-blue fade-in">
+                <div class="card-image">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Specialization Programs</h3>
+                    <p class="card-text">Postgraduate programs in critical care, pediatrics, and community health nursing. Advanced training for specialized nursing roles. (Coming Soon)</p>
+                    <a href="/programs" class="btn-secondary">Explore</a>
+                </div>
+            </div>
+            
+            <div class="card  neon-border-blue fade-in">
+                <div class="card-image">
+                    <i class="fas fa-book-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Continuing Education</h3>
+                    <p class="card-text">Professional development courses and workshops for practicing nurses to enhance their skills and stay updated with latest medical practices.</p>
+                    <a href="/resources" class="btn-outline">View Resources</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Preview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">State-of-the-Art Facilities</h2>
+            <p class="section-subtitle">Modern infrastructure for quality nursing education</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card neon-border-maroon fade-in">
+                <div class="card-image">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Advanced Skills Lab</h3>
+                    <p class="card-text">Fully equipped with simulation manikins, IV arms, CPR dummies, and modern medical equipment for hands-on training and skill development.</p>
+                    <a href="/resources/skills-lab" class="btn-primary">View Lab</a>
+                </div>
+            </div>
+            
+            <div class="card neon-border-maroon   fade-in">
+                <div class="card-image">
+                    <i class="fas fa-book-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Library</h3>
+                    <p class="card-text">Extensive collection of medical journals, e-books, research databases, and quiet study areas for comprehensive learning and research.</p>
+                    <a href="/resources/library" class="btn-primary">Visit Library</a>
+                </div>
+            </div>
+            
+            <div class="card neon-border-maroon fade-in">
+                <div class="card-image">
+                    <i class="fas fa-laptop-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Computer Lab</h3>
+                    <p class="card-text">Modern computer facilities with high-speed internet access and medical software for research, assignments, and online learning resources.</p>
+                    <a href="/resources/computer-lab" class="btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="/resources" class="btn-secondary">
+                <i class="fas fa-tools"></i> View All Resources
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Campus Life</h2>
+            <p class="section-subtitle">Experience the vibrant community at Imperial College of Nursing</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/2A377D/FFFFFF?text=Classroom+Session" data-title="Interactive Classroom Sessions">
+                <img src="images/classroom.jpeg" class="gallery-image" alt="">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Interactive Learning</h3>
+                    <p class="gallery-description">Modern classrooms with technology-enabled teaching methods</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Lab+Training" data-title="Skills Lab Training">
+                <img src="images/intlearn.jpeg" class="gallery-image" alt="">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Practical Training</h3>
+                    <p class="gallery-description">Hands-on practice in our advanced skills laboratory</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/C22028/FFFFFF?text=Campus+View" data-title="Campus View">
+                <img src="images/buildingclean.png" class="gallery-image" alt="">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Beautiful Campus</h3>
+                    <p class="gallery-description">Modern infrastructure in the scenic Swat Valley</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="/gallery" class="btn-secondary">
+                <i class="fas fa-images"></i> View Gallery
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Add only the canvas container styles from the second page */
+    .canvas-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        z-index: 1;
+    }
+
+   
+    /* Ensure hero section has proper positioning */
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 2;
+        margin-left: 240px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .canvas-container {
+            display: none;
+        }
+        
+        .hero .container {
+            width: 100%;
+            max-width: 100%;
+            margin-left:auto;
+            margin-right: auto;
+        }
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+
+<script>
+    // Three.js 3D Scene - DNA Helix
+    let scene, camera, renderer, controls;
+    
+    function init3DScene() {
+        // Create scene
+        scene = new THREE.Scene();
+        scene.background = null;
+        
+        // Get canvas container
+        const canvasContainer = document.querySelector('.canvas-container');
+        if (!canvasContainer) return;
+        
+        // Create camera
+        camera = new THREE.PerspectiveCamera(75, canvasContainer.clientWidth / canvasContainer.clientHeight, 0.1, 1000);
+        camera.position.z = 5;
+        
+        // Create renderer
+        renderer = new THREE.WebGLRenderer({ 
+            canvas: document.getElementById('medicalCanvas'),
+            alpha: true, 
+            antialias: true 
+        });
+        renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+        
+        // Add orbit controls
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableZoom = false;
+        controls.enablePan = false;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.5;
+        
+        // Create DNA-like helix geometry
+        const points = [];
+        for (let i = 0; i < 5; i += 0.1) {
+            points.push(new THREE.Vector3(
+                Math.sin(i * 2) * 1.5,
+                i - 2.5,
+                Math.cos(i * 2) * 1.5
+            ));
+        }
+        
+        const tubeGeometry = new THREE.TubeGeometry(
+            new THREE.CatmullRomCurve3(points),
+            100,
+            0.1,
+            8,
+            false
+        );
+        
+        const material = new THREE.MeshPhongMaterial({
+            color: 0xC22028,
+            shininess: 100,
+            specular: 0xffffff
+        });
+        
+        // Create second helix
+        const points2 = [];
+        for (let i = 0; i < 5; i += 0.1) {
+            points2.push(new THREE.Vector3(
+                Math.sin(i * 2 + Math.PI) * 1.5,
+                i - 2.5,
+                Math.cos(i * 2 + Math.PI) * 1.5
+            ));
+        }
+        
+        const tubeGeometry2 = new THREE.TubeGeometry(
+            new THREE.CatmullRomCurve3(points2),
+            100,
+            0.1,
+            8,
+            false
+        );
+        
+        const material2 = new THREE.MeshPhongMaterial({
+            color: 0x2A377D,
+            shininess: 100,
+            specular: 0xffffff
+        });
+        
+        const helix1 = new THREE.Mesh(tubeGeometry, material);
+        const helix2 = new THREE.Mesh(tubeGeometry2, material2);
+        scene.add(helix1);
+        scene.add(helix2);
+        
+        // Add connecting lines
+        for (let i = 0; i < 50; i++) {
+            const index = Math.floor(i * 2);
+            if (index < points.length && index < points2.length) {
+                const lineGeometry = new THREE.BufferGeometry().setFromPoints([
+                    points[index],
+                    points2[index]
+                ]);
+                
+                const lineMaterial = new THREE.LineBasicMaterial({
+                    color: 0x1E68A4,
+                    transparent: true,
+                    opacity: 0.6
+                });
+                
+                const line = new THREE.Line(lineGeometry, lineMaterial);
+                scene.add(line);
+            }
+        }
+        
+        // Add lights
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        scene.add(ambientLight);
+        
+        const directionalLight = new THREE.DirectionalLight(0xFEFEFB, 0.8);
+        directionalLight.position.set(1, 1, 1);
+        scene.add(directionalLight);
+        
+        const redLight = new THREE.PointLight(0xC22028, 0.5, 10);
+        redLight.position.set(2, 2, 2);
+        scene.add(redLight);
+        
+        const blueLight = new THREE.PointLight(0x2A377D, 0.5, 10);
+        blueLight.position.set(-2, -2, -2);
+        scene.add(blueLight);
+        
+        // Handle window resize
+        window.addEventListener('resize', onWindowResize);
+        
+        // Start animation
+        animate();
+    }
+    
+    function onWindowResize() {
+        const canvasContainer = document.querySelector('.canvas-container');
+        if (!canvasContainer) return;
+        
+        camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+    }
+    
+    function animate() {
+        requestAnimationFrame(animate);
+        
+        // Rotate the DNA helixes
+        scene.children.forEach(child => {
+            if (child.type === 'Mesh' || child.type === 'Line') {
+                child.rotation.y += 0.005;
+            }
+        });
+        
+        controls.update();
+        renderer.render(scene, camera);
+    }
+    
+    // Initialize 3D scene
+    window.addEventListener('load', function() {
+        if (typeof THREE !== 'undefined') {
+            init3DScene();
+        }
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-staff-snake"></i>
+                        </div>
+                        <h3><%= collegeName %></h3>
+                        <p><%= location %></p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/<%= phone.replace(/[^0-9]/g, '') %>" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="/about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="/programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="/admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="/faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="/gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="/contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="/resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="/resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="/resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="/resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p><%= collegeName %><br><%= location %></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><%= phone %></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><%= email %></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; <%= currentYear %> <%= collegeName %>. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
