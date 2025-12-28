@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link ">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link active">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link ">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Campus Resources</h1>
+            <p class="hero-subtitle">State-of-the-art facilities for comprehensive nursing education</p>
+        </div>
+    </div>
+</section>
+
+<!-- Resources Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">Modern infrastructure to support quality nursing education</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+            <p>Imperial College of Nursing provides world-class facilities and resources to ensure our students receive the best possible education. Our campus is equipped with modern technology and learning environments designed to enhance the educational experience.</p>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="card-grid">
+            <!-- Skills Lab -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-syringe"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Skills Laboratory</h3>
+                    <p class="card-text">Fully equipped with simulation manikins, IV arms, CPR dummies, and modern medical equipment for hands-on training.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Simulation</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Practical Training</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">24/7 Access</span>
+                    </div>
+                    <a href="skills-lab" class="btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> Explore Lab
+                    </a>
+                </div>
+            </div>
+
+            <!-- Library -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-book-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Digital Library</h3>
+                    <p class="card-text">Extensive collection of medical journals, e-books, research databases and quiet study areas for comprehensive learning.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">E-Resources</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Study Rooms</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">WiFi Access</span>
+                    </div>
+                    <a href="library" class="btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> Visit Library
+                    </a>
+                </div>
+            </div>
+
+            <!-- Computer Lab -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-laptop-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Computer Laboratory</h3>
+                    <p class="card-text">Modern computer facilities with high-speed internet access and medical software for research and online learning.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">High-Speed Internet</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Medical Software</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Printing</span>
+                    </div>
+                    <a href="computer-lab" class="btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> View Lab
+                    </a>
+                </div>
+            </div>
+
+            <!-- Clinical Training -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-hospital-alt"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Clinical Training</h3>
+                    <p class="card-text">Partnerships with leading hospitals for real-world clinical experience and supervised patient care practice.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Hospital Placements</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Supervised Practice</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Diverse Specialties</span>
+                    </div>
+                    <a href="clinical-training" class="btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Transport -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Science Lab</h3>
+                    <p class="card-text">Science Lab stocked with the necassary equipments as per carricula.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Microscopes</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Chemicals</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Measurement Tools</span>
+                    </div>
+                    <a href="transport" class="btn-primary" style="margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> View More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Other Facilities -->
+            <div class="card fade-in">
+                <div class="card-image">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Other Facilities</h3>
+                    <p class="card-text">Additional amenities including cafeteria, sports facilities, prayer areas, and student common rooms.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Cafeteria</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Sports</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Prayer Area</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Gallery -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Campus Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/2A377D/FFFFFF?text=Skills+Lab" data-title="Advanced Skills Laboratory">
+                <img src="images/skill1.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Skills Lab</h3>
+                    <p class="gallery-description">Modern simulation training facility</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Library" data-title="Digital Library">
+                <img src="images/library.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Library</h3>
+                    <p class="gallery-description">Quiet study and research area</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/C22028/FFFFFF?text=Computer+Lab" data-title="Computer Laboratory">
+                <img src="images/librar.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Computer Lab</h3>
+                    <p class="gallery-description">Technology-enabled learning space</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Operating Hours -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Operating Hours</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-syringe" style="color: var(--primary-red);"></i>
+                        Skills Lab
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: 10:00 AM - 2:00 PM</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-book-medical" style="color: var(--primary-red);"></i>
+                        Library
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-laptop-medical" style="color: var(--primary-red);"></i>
+                        Computer Lab
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-microscope" style="color: var(--primary-red);"></i>
+                        Science Lab
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x

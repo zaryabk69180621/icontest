@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/index.html" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link active">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link ">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link ">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Admissions</h1>
+            <p class="hero-subtitle">Start Your Journey in Nursing</p>
+        </div>
+    </div>
+</section>
+
+<!-- Admissions Overview -->
+
+
+<!-- Eligibility Criteria Section -->
+<section class="section" id="eligibility-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Eligibility Criteria</h2>
+            <p class="section-subtitle">Requirements for GBSN Program Admission</p>
+        </div>
+
+        <div class="eligibility-criteria" style="max-width: 900px; margin: 0 auto;">
+            <div class="criteria-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Criteria 1 -->
+                <div class="criteria-card" style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: var(--transition-normal); border-top: 4px solid var(--primary-red);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Academic Qualification</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        FSC (Pre-Medical) with minimum 50% marks from a recognized board
+                    </p>
+                    <div style="background: var(--light-gray); padding: 0.75rem; border-radius: var(--radius-sm);">
+                        <span style="color: var(--primary-red); font-weight: 600;">Minimum: 50% Marks</span>
+                    </div>
+                </div>
+
+                <!-- Criteria 2 -->
+                <div class="criteria-card" style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: var(--transition-normal); border-top: 4px solid var(--deep-blue);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">KMU CAT</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        Appearance in Khyber Medical University (KMU) Common Admission Test
+                    </p>
+                    <div style="background: var(--light-gray); padding: 0.75rem; border-radius: var(--radius-sm);">
+                        <span style="color: var(--deep-blue); font-weight: 600;">Mandatory Requirement</span>
+                    </div>
+                </div>
+
+                <!-- Criteria 3 -->
+                <div class="criteria-card" style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: var(--transition-normal); border-top: 4px solid var(--sky-blue);">
+                    <div style="width: 60px; height: 60px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">College Interview</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                        Successful appearance in college admission interview
+                    </p>
+                    <div style="background: var(--light-gray); padding: 0.75rem; border-radius: var(--radius-sm);">
+                        <span style="color: var(--sky-blue); font-weight: 600;">Personal Assessment</span>
+                    </div>
+                </div>
+                <div class="criteria-card" style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; transition: var(--transition-normal); border-top: 4px solid var(--primary-red);">
+    <div style="width: 60px; height: 60px; background: var(--primary-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 1.5rem;">
+        <i class="fas fa-heart"></i>
+    </div>
+    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Good Character</h3>
+    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+        Core qualities that demonstrate moral strength and ethical integrity
+    </p>
+    <div style="background: var(--light-gray); padding: 0.75rem; border-radius: var(--radius-sm);">
+        <span style="color: var(--primary-red); font-weight: 600;">Ethical Assessment</span>
+    </div>
+</div>
+            </div>
+            
+            <div style="margin-top: 3rem; background: linear-gradient(135deg, rgba(194, 32, 40, 0.05), rgba(42, 55, 125, 0.05)); padding: 2rem; border-radius: var(--radius-lg); border-left: 4px solid var(--primary-red);">
+                <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                    <i class="fas fa-info-circle" style="color: var(--primary-red);"></i>
+                    Important Notes
+                </h4>
+                <ul style="color: var(--text-light); list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <i class="fas fa-check" style="color: var(--primary-red); margin-top: 0.25rem;"></i>
+                        <span>All three criteria must be fulfilled for admission consideration</span>
+                    </li>
+                    <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <i class="fas fa-check" style="color: var(--primary-red); margin-top: 0.25rem;"></i>
+                        <span>Original documents must be presented for verification</span>
+                    </li>
+                    <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <i class="fas fa-check" style="color: var(--primary-red); margin-top: 0.25rem;"></i>
+                        <span>Meeting eligibility criteria does not guarantee admission</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Admission Procedures Section -->
+<section class="section" id="procedures-section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Admission Procedures</h2>
+            <p class="section-subtitle">Step-by-step process from application to enrollment</p>
+        </div>
+
+        <div class="procedures-timeline" style="max-width: 900px; margin: 0 auto;">
+            <!-- Step 1 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        01
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-pencil-alt" style="color: var(--primary-red);"></i>
+                        Appear in KMU CAT
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Register and appear in Khyber Medical University Common Admission Test. Obtain your test result for admission process.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-clock" style="color: var(--primary-red);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">First Step</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        02
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-file-upload" style="color: var(--deep-blue);"></i>
+                        Submit Admission Application
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Complete and submit the online admission application form along with required documents before the deadline.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-calendar" style="color: var(--deep-blue);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">As per Deadline</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        03
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-receipt" style="color: var(--sky-blue);"></i>
+                        Get Admission Slip
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        After successful application submission, obtain your admission application submission slip for further process.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-download" style="color: var(--sky-blue);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">Keep for Records</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        04
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-comments" style="color: var(--primary-red);"></i>
+                        Appear in Interviews
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Attend the scheduled personal interview at the college campus. Bring all original documents for verification.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-users" style="color: var(--primary-red);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">As per Deadline</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        05
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-clipboard-list" style="color: var(--deep-blue);"></i>
+                        Get Shortlisted
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Check the merit list for shortlisted candidates based on KMU CAT score and interview performance.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-list-ol" style="color: var(--deep-blue);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">Merit Based</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        06
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-file-contract" style="color: var(--sky-blue);"></i>
+                        Provide Documents
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Submit all required original documents for verification and complete documentation formalities.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-folder-open" style="color: var(--sky-blue);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">Original Required</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="procedure-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; position: relative;">
+                <div style="position: relative; z-index: 2;">
+                    <div style="width: 70px; height: 70px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; box-shadow: var(--shadow-md);">
+                        07
+                    </div>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: relative;">
+                    <div style="position: absolute; left: -1rem; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 1rem solid transparent; border-bottom: 1rem solid transparent; border-right: 1rem solid white;"></div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-university" style="color: var(--primary-red);"></i>
+                        Secure Admission
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">
+                        Complete fee submission, receive admission confirmation, and prepare for orientation and classes.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: var(--radius-sm);">
+                        <i class="fas fa-check-circle" style="color: var(--primary-red);"></i>
+                        <span style="font-weight: 600; color: var(--deep-blue);">Final Step</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Admission Resources</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-image" style="background: var(--gradient-red);">
+                    <i class="fas fa-list-check"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Eligibility Criteria</h3>
+                    <p class="card-text">Detailed admission requirements, minimum qualifications, and prerequisites for the GBSN program.</p>
+                    <a href="#eligibility-section" class="btn-primary">View Requirements</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: var(--gradient-blue);">
+                    <i class="fas fa-file-circle-question"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Admission Process</h3>
+                    <p class="card-text">Complete step-by-step guide to the admission procedure, documents required, and timeline.</p>
+                    <a href="#procedures-section" class="btn-primary">View Process</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image" style="background: var(--gradient-sky);">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">FAQs</h3>
+                    <p class="card-text">Frequently asked questions about admissions, fees, scholarships, and campus life.</p>
+                    <a href="#faq-section" class="btn-primary">Get Answers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Important Dates -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" id="important-dates">Important Dates</h2>
+            <p class="section-subtitle">For Session Fall 2025</p>
+        </div>
+
+        <div class="dates-timeline" style="max-width: 800px; margin: 0 auto;">
+            <div class="timeline-item" style="position: relative; padding-left: 2rem; margin-bottom: 2.5rem;">
+                <div style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: var(--primary-red); border-radius: 50%;"></div>
+                <div style="position: absolute; left: 9px; top: 20px; width: 2px; height: calc(100% + 1rem); background: var(--light-gray);"></div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Admission Announcement</h4>
+                    <p style="color: var(--primary-red); font-weight: 600; margin-bottom: 0.5rem;">August 15, 2025</p>
+                    <p style="color: var(--text-light);">Official announcement of admission for Fall 2025 session.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" style="position: relative; padding-left: 2rem; margin-bottom: 2.5rem;">
+                <div style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: var(--deep-blue); border-radius: 50%;"></div>
+                <div style="position: absolute; left: 9px; top: 20px; width: 2px; height: calc(100% + 1rem); background: var(--light-gray);"></div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Application Deadline</h4>
+                    <p style="color: var(--primary-red); font-weight: 600; margin-bottom: 0.5rem;">October 31, 2025</p>
+                    <p style="color: var(--text-light);">Last date to submit complete application forms with required documents.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" style="position: relative; padding-left: 2rem; margin-bottom: 2.5rem;">
+                <div style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: var(--sky-blue); border-radius: 50%;"></div>
+                <div style="position: absolute; left: 9px; top: 20px; width: 2px; height: calc(100% + 1rem); background: var(--light-gray);"></div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Entrance Test</h4>
+                    <p style="color: var(--primary-red); font-weight: 600; margin-bottom: 0.5rem;">As announced by KMU</p>
+                    <p style="color: var(--text-light);">Admission test arranged by Khyber Medical University.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" style="position: relative; padding-left: 2rem; margin-bottom: 2.5rem;">
+                <div style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: var(--primary-red); border-radius: 50%;"></div>
+                <div style="position: absolute; left: 9px; top: 20px; width: 2px; height: calc(100% + 1rem); background: var(--light-gray);"></div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Interview & Merit List</h4>
+                    <p style="color: var(--primary-red); font-weight: 600; margin-bottom: 0.5rem;">November 25-30, 2025</p>
+                    <p style="color: var(--text-light);">Personal interviews and announcement of merit list.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" style="position: relative; padding-left: 2rem;">
+                <div style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: var(--deep-blue); border-radius: 50%;"></div>
+                <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Classes Commence</h4>
+                    <p style="color: var(--primary-red); font-weight: 600; margin-bottom: 0.5rem;">December 1, 2025</p>
+                    <p style="color: var(--text-light);">Orientation and beginning of Fall 2025 academic session.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Application Form -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" id="application-form">Online Application</h2>
+            <p class="section-subtitle">Apply now for the Fall 2025 intake</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <form id="admissionForm">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label">First Name *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label">Date of Birth *</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Gender *</label>
+                        <select class="form-control" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label class="form-label">Address *</label>
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label class="form-label">Educational Qualification *</label>
+                    <select class="form-control" required>
+                        <option value="">Select Qualification</option>
+                        <option value="fsc">F.Sc (Pre-Medical)</option>
+                        <option value="hsse">HSSC with Science</option>
+                        <option value="equivalent">Equivalent Qualification</option>
+                    </select>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label">Marks Obtained *</label>
+                        <input type="number" class="form-control" placeholder="e.g., 850" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Total Marks *</label>
+                        <input type="number" class="form-control" placeholder="e.g., 1100" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <label class="form-label">Why do you want to pursue nursing? *</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+                    <button type="reset" class="btn-outline">
+                        <i class="fas fa-redo"></i> Reset Form
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section" id="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common admission queries</p>
+        </div>
+
+        <div class="faq-container" style="max-width: 900px; margin: 0 auto;">
+            <!-- FAQ 1 -->
+            <div class="faq-item" style="margin-bottom: 1.5rem; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <button class="faq-question" style="width: 100%; padding: 1.5rem 2rem; background: none; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: 600; color: var(--deep-blue);">
+                    <span style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-question-circle" style="color: var(--primary-red);"></i>
+                        What is the minimum eligibility criteria for GBSN program?
+                    </span>
+                    <i class="fas fa-chevron-down faq-icon" style="transition: var(--transition-normal);"></i>
+                </button>
+                <div class="faq-answer" style="padding: 0 2rem 1.5rem 2rem; display: none;">
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        The minimum eligibility criteria include:
+                    </p>
+                    <ul style="color: var(--text-light); margin-top: 0.5rem; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">FSC (Pre-Medical) with minimum 50% marks from a recognized board</li>
+                        <li style="margin-bottom: 0.5rem;">Appearance in Khyber Medical University (KMU) Common Admission Test (CAT)</li>
+                        <li>Successful appearance in college admission interview</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item" style="margin-bottom: 1.5rem; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <button class="faq-question" style="width: 100%; padding: 1.5rem 2rem; background: none; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: 600; color: var(--deep-blue);">
+                    <span style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-question-circle" style="color: var(--primary-red);"></i>
+                        How do I apply for KMU CAT?
+                    </span>
+                    <i class="fas fa-chevron-down faq-icon" style="transition: var(--transition-normal);"></i>
+                </button>
+                <div class="faq-answer" style="padding: 0 2rem 1.5rem 2rem; display: none;">
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        To apply for KMU CAT:
+                    </p>
+                    <ol style="color: var(--text-light); margin-top: 0.5rem; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">Visit the official Khyber Medical University website</li>
+                        <li style="margin-bottom: 0.5rem;">Register for the Common Admission Test during the announced admission period</li>
+                        <li style="margin-bottom: 0.5rem;">Pay the required test fee through designated banks</li>
+                        <li style="margin-bottom: 0.5rem;">Download your admit card from the portal</li>
+                        <li>Appear for the test at the designated center</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item" style="margin-bottom: 1.5rem; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <button class="faq-question" style="width: 100%; padding: 1.5rem 2rem; background: none; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: 600; color: var(--deep-blue);">
+                    <span style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-question-circle" style="color: var(--primary-red);"></i>
+                        What documents are required for admission?
+                    </span>
+                    <i class="fas fa-chevron-down faq-icon" style="transition: var(--transition-normal);"></i>
+                </button>
+                <div class="faq-answer" style="padding: 0 2rem 1.5rem 2rem; display: none;">
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Required documents include:
+                    </p>
+                    <ul style="color: var(--text-light); margin-top: 0.5rem; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">FSC (Pre-Medical) Marksheet & Certificate (original + 3 attested copies)</li>
+                        <li style="margin-bottom: 0.5rem;">Matriculation Marksheet & Certificate (original + 3 attested copies)</li>
+                        <li style="margin-bottom: 0.5rem;">KMU CAT Score Card (original + 2 copies)</li>
+                        <li style="margin-bottom: 0.5rem;">Domicile Certificate (original + 3 copies)</li>
+                        <li style="margin-bottom: 0.5rem;">CNIC/B-Form (original + 3 copies)</li>
+                        <li style="margin-bottom: 0.5rem;">Character Certificate from last institution</li>
+                        <li>6 recent passport-size photographs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item" style="margin-bottom: 1.5rem; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <button class="faq-question" style="width: 100%; padding: 1.5rem 2rem; background: none; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1rem; font-weight: 600; color: var(--deep-blue);">
+                    <span style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-question-circle" style="color: var(--primary-red);"></i>
+                        What is the selection criteria for admission?
+                    </span>
+                    <i class="fas fa-chevron-down faq-icon" style="transition: var(--transition-normal);"></i>
+                </button>
+                <div class="faq-answer" style="padding: 0 2rem 1.5rem 2rem; display: none;">
+                    <p style="color: var(--text-light); line-height: 1.6;">
+                        Admission is based on merit determined by:
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: var(--radius-md); text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--primary-red); font-weight: 700;">50%</div>
+                            <div style="color: var(--deep-blue); font-weight: 600;">KMU CAT Score</div>
+                        </div>
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: var(--radius-md); text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--primary-red); font-weight: 700;">40%</div>
+                            <div style="color: var(--deep-blue); font-weight: 600;">FSC Marks</div>
+                        </div>
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: var(--radius-md); text-align: center;">
+                            <div style="font-size: 1.5rem; color: var(--primary-red); font-weight: 700;">10%</div>
+                            <div style="color: var(--deep-blue); font-weight: 600;">Interview</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                Still have questions? Contact our admissions office for personalized assistance.
+            </p>
+            <a href="contact" style="text-align: center; justify-content: center; width: fit-content; margin: auto;" class="btn-primary">
+                <i class="fas fa-headset"></i> Contact Admissions Office
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="section">
+    <div class="container">
+        <div class="contact-info" style="text-align: center;">
+            <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Need Help with Admissions?</h3>
+            <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 2rem;">
+                Contact our admissions office for any queries regarding eligibility, process, or requirements.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="width: 50px; height: 50px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <p style="font-weight: 600; color: var(--deep-blue);">Admissions Office</p>
+                    <p style="color: var(--text-light);">+92 946 9240169</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 50px; height: 50px; background: var(--gradient-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <p style="font-weight: 600; color: var(--deep-blue);">Email</p>
+                    <p style="color: var(--text-light);">admissions@imperialnursing.edu.pk</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="width: 50px; height: 50px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <p style="font-weight: 600; color: var(--deep-blue);">Office Hours</p>
+                    <p style="color: var(--text-light);">Mon-Fri: 9AM - 4PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// FAQ Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('.faq-icon');
+            
+            // Toggle current FAQ
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        });
+    });
+});
+
+// Form Submission Handler
+document.addEventListener('DOMContentLoaded', function() {
+    const admissionForm = document.getElementById('admissionForm');
+    if (admissionForm) {
+        admissionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const formObject = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your server
+            // For now, just show an alert
+            alert('Thank you for your application! We will contact you soon.');
+            this.reset();
+            
+            // In a real application, you would use fetch or AJAX to submit the form
+            // Example:
+            // fetch('/submit-application', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(formObject)
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     alert(data.message);
+            //     this.reset();
+            // })
+            // .catch(error => {
+            //     console.error('Error:', error);
+            //     alert('There was an error submitting your application.');
+            // });
+        });
+    }
+});
+</script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x

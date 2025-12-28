@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link ">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link ">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link ">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Computer Laboratory</h1>
+            <p class="hero-subtitle">Technology-enabled learning for modern nursing education</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lab Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Modern Computing Facilities</h2>
+            <p class="section-subtitle">State-of-the-art computer lab for nursing education and research</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+                <div>
+                    <p>Our Computer Laboratory provides students with access to modern computing facilities and specialized software essential for nursing education. The lab supports research, online learning, and the development of digital literacy skills required in today's healthcare environment.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">High-speed internet connectivity</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Specialized nursing software</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-sky); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Printing and scanning facilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="images/computer-lab-main.jpg" class="image-placeholder" alt="Computer Lab Main Area" style="height: 300px; object-fit: cover; border-radius: var(--radius-lg);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lab Statistics -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Lab Statistics</h2>
+        </div>
+
+        <section class="stats-section">
+            <div class="">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Computers</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">100 Mbps</div>
+                        <div class="stat-label"> MB Internet Speed</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Printer</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Software Applications</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Lab Specifications -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Lab Specifications</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-desktop" style="color: var(--primary-red);"></i>
+                        Hardware
+                    </h3>
+                    <p class="card-text">Modern computing equipment with latest specifications for optimal performance.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>25+ Desktop Computers</li>
+                        <li>Intel Core i5 Processors</li>
+                        <li>8GB RAM Minimum</li>
+                        <li>1TB Storage</li>
+                        <li>24-inch LED Monitors</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-wifi" style="color: var(--deep-blue);"></i>
+                        Network & Connectivity
+                    </h3>
+                    <p class="card-text">High-speed internet and network infrastructure for seamless online access.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>100 Mbps Dedicated Connection</li>
+                        <li>WiFi 6 Wireless Network</li>
+                        <li>Network Printing</li>
+                        <li>Cloud Storage Access</li>
+                        <li>VPN for Remote Access</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-print" style="color: var(--sky-blue);"></i>
+                        Peripheral Devices
+                    </h3>
+                    <p class="card-text">Additional equipment to support various academic and research needs.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li> On-Premises Laser Printers</li>
+                        <li>On-Premises Scanners</li>
+                        <li>Projectors</li>
+                        <li>Whiteboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Computer Lab Gallery -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Computer Lab Gallery</h2>
+            <p class="section-subtitle">Explore our modern computing facilities and technology resources</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="images/computer-lab-workstations.jpg" data-title="Computer Workstations">
+                <img src="images/computer-lab-workstations.jpg" class="gallery-image" alt="Computer Workstations">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Computer Workstations</h3>
+                    <p class="gallery-description">Modern computers for individual study</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/computer-lab-networking.jpg" data-title="Networking Area">
+                <img src="images/computer-lab-networking.jpg" class="gallery-image" alt="Networking Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Networking Area</h3>
+                    <p class="gallery-description">High-speed network infrastructure</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/computer-lab-printing.jpg" data-title="Printing Station">
+                <img src="images/computer-lab-printing.jpg" class="gallery-image" alt="Printing Station">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Printing Station</h3>
+                    <p class="gallery-description">Laser printers and scanners</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/computer-lab-projector.jpg" data-title="Presentation Area">
+                <img src="images/computer-lab-projector.jpg" class="gallery-image" alt="Presentation Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Presentation Area</h3>
+                    <p class="gallery-description">Projector and screen for presentations</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/computer-lab-software.jpg" data-title="Software Suite">
+                <img src="images/computer-lab-software.jpg" class="gallery-image" alt="Software Suite">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Software Suite</h3>
+                    <p class="gallery-description">Specialized nursing applications</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/computer-lab-group.jpg" data-title="Group Work Area">
+                <img src="images/computer-lab-group.jpg" class="gallery-image" alt="Group Work Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Group Work Area</h3>
+                    <p class="gallery-description">Collaborative project space</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Software & Applications -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Software & Applications</h2>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="software-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 2.5rem; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--gradient-red); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Medical & Nursing Software</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Specialized applications for nursing education, drug databases, and medical calculations.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Nursing Simulation Software</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Drug Databases</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Medical Calculators</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="software-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 2.5rem; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--gradient-blue); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Research & Analysis Tools</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Statistical software and research tools for data analysis and academic projects.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">SPSS Statistics</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Microsoft Office</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">AP Info</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="software-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--gradient-sky); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Word processing Softwares</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Access to educational portals, e-learning resources, and online course materials.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">MS Word</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">NotePad ++</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">MS Powerpoint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Usage Guidelines -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Usage Guidelines</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-clock" style="color: var(--primary-red);"></i>
+                        Operating Hours
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                        <li>Saturday: 9:00 AM - 5:00 PM</li>
+                        <li>Sunday: 10:00 AM - 4:00 PM</li>
+                        <li>Extended hours during exam periods</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-user-check" style="color: var(--primary-red);"></i>
+                        Access Rules
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Valid student ID required</li>
+                        <li>No food or drinks allowed</li>
+                        <li>Personal devices permitted</li>
+                        <li>Supervised access for guests</li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+    </div>
+</section>
+
+<!-- Image Modal (for gallery click functionality) -->
+<div class="modal" id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center;">
+    <div class="modal-content" style="max-width: 90%; max-height: 90%; position: relative;">
+        <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: var(--radius-md);">
+        <div id="modalCaption" style="color: white; text-align: center; margin-top: 1rem; font-size: 1.2rem;"></div>
+        <button onclick="closeModal()" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;">×</button>
+    </div>
+</div>
+
+<script>
+    // Gallery functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imageSrc = this.getAttribute('data-image');
+                const title = this.getAttribute('data-title');
+                
+                if (imageSrc) {
+                    document.getElementById('modalImage').src = imageSrc;
+                    document.getElementById('modalCaption').textContent = title;
+                    document.getElementById('imageModal').style.display = 'flex';
+                }
+            });
+            
+            // Add hover effect
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });
+    
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside the image
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x

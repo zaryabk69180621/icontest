@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link ">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link ">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link ">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Science Laboratory</h1>
+            <p class="hero-subtitle">Foundational sciences for evidence-based nursing practice</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lab Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Biomedical Sciences Laboratory</h2>
+            <p class="section-subtitle">Integrating basic sciences with clinical nursing practice</p>
+        </div>
+
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <div class="hero-grid">
+                <div>
+                    <p>Our Science Laboratory provides nursing students with hands-on experience in fundamental biomedical sciences essential for evidence-based nursing practice. The lab bridges theoretical knowledge with practical applications, preparing students for clinical decision-making and patient care.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Anatomy and physiology practicals</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Microbiology and infection control</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Biochemistry and pharmacology basics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="images/sciencelab1.jpeg" class="image-placeholder" alt="Science Laboratory Main Area">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lab Statistics -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Laboratory Statistics</h2>
+        </div>
+
+        <section class="stats-section">
+            <div class="">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Workstations</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Microscopes</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Specimens</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Lab Instruments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Laboratory Divisions -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Laboratory Divisions</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-brain" style="color: var(--primary-red);"></i>
+                        Anatomy & Physiology
+                    </h3>
+                    <p class="card-text">Study of human body structure and function through models, charts, and specimens.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Human skeleton models</li>
+                        <li>Organ system charts</li>
+                        <li>Histology slides</li>
+                        <li>Muscle manikins</li>
+                        <li>Physiology experiments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-virus" style="color: var(--deep-blue);"></i>
+                        Microbiology
+                    </h3>
+                    <p class="card-text">Study of microorganisms, infection control, and sterile techniques.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Microscope workstations</li>
+                        <li>Culture media preparation</li>
+                        <li>Sterilization equipment</li>
+                        <li>Pathogen identification</li>
+                        <li>Antibiotic sensitivity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-flask" style="color: var(--sky-blue);"></i>
+                        Biochemistry
+                    </h3>
+                    <p class="card-text">Basic biochemical analysis relevant to nursing practice and diagnostics.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Urinalysis equipment</li>
+                        <li>Blood glucose testing</li>
+                        <li>pH measurement</li>
+                        <li>Enzyme studies</li>
+                        <li>Metabolism experiments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Science Lab Gallery -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Science Lab Gallery</h2>
+            <p class="section-subtitle">Explore our biomedical science facilities and equipment</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="images/science-lab-microscope.jpg" data-title="Microscopy Area">
+                <img src="images/sciencelab2.jpeg" class="gallery-image" alt="Microscopy Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Microscopy Area</h3>
+                    <p class="gallery-description">Compound and digital microscopes</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/science-lab-anatomy.jpg" data-title="Anatomy Section">
+                <img src="images/sciencelab3.jpeg" class="gallery-image" alt="Anatomy Section">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Anatomy Section</h3>
+                    <p class="gallery-description">Human anatomy models and charts</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/science-lab-biochem.jpg" data-title="Biochemistry Bench">
+                <img src="images/sciencelab4.jpeg" class="gallery-image" alt="Biochemistry Bench">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Biochemistry Bench</h3>
+                    <p class="gallery-description">Chemical analysis equipment</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/science-lab-sterile.jpg" data-title="Sterile Technique Area">
+                <img src="images/sciencelab1.jpeg" class="gallery-image" alt="Sterile Technique Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Sterile Technique Area</h3>
+                    <p class="gallery-description">Aseptic procedures training</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/science-lab-specimen.jpg" data-title="Specimen Collection">
+                <img src="images/sciencelab2.jpeg" class="gallery-image" alt="Specimen Collection">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Specimen Collection</h3>
+                    <p class="gallery-description">Biological samples and cultures</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/science-lab-safety.jpg" data-title="Safety Equipment">
+                <img src="images/sciencelab3.jpeg" class="gallery-image" alt="Safety Equipment">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Safety Equipment</h3>
+                    <p class="gallery-description">PPE and emergency stations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipment & Instruments -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Equipment & Instruments</h2>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="equipment-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 2.5rem; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--gradient-red); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Microscopy Equipment</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Advanced microscopy systems for studying cellular structures and microorganisms.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Compound Microscopes</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Digital Microscopes</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Slide Preparation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipment-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 2.5rem; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--gradient-blue); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-weight"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Analytical Instruments</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Precision instruments for biochemical analysis and measurement.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Analytical Balances</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">pH Meters</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Centrifuges</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="equipment-item" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; padding: 2rem; background: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="width: 60px; height: 60px; background: var(--deep-blue); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-thermometer"></i>
+                </div>
+                <div>
+                    <h3 style="color: var(--deep-blue); margin-bottom: 1rem;">Environmental Control</h3>
+                    <p style="color: var(--text-light); margin-bottom: 1rem;">Equipment for maintaining controlled laboratory conditions and cultures.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Incubators</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Autoclaves</span>
+                        <span style="background: var(--light-gray); color: var(--text-light); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Refrigerators</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Practical Sessions -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Practical Sessions</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-calendar-alt" style="color: var(--primary-red);"></i>
+                        Session Schedule
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                        <li>Saturday: 10:00 AM - 2:00 PM</li>
+                        <li>Batch size: 20 students maximum</li>
+                        <li>Advance booking required</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-user-graduate" style="color: var(--primary-red);"></i>
+                        Session Requirements
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Lab coat mandatory</li>
+                        <li>Closed-toe shoes required</li>
+                        <li>Safety goggles provided</li>
+                        <li>Pre-lab reading completion</li>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<!-- Safety Protocols -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Safety Protocols</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-hand-sparkles" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Hand Hygiene</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Mandatory hand washing before and after sessions</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-tshirt" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Protective Gear</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Lab coats, gloves, and goggles must be worn</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-exclamation-triangle" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Hazard Awareness</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Chemical and biological hazard training</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-first-aid" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Emergency Response</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">First aid and spill management procedures</p>
+                </div>
+            </div>
+            
+            <div style="padding-top: 2rem; border-top: 2px solid var(--light-gray);">
+                <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Prohibited Activities</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No food or drinks
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No unauthorized experiments
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No mobile phone use
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No specimen removal
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Modal (for gallery click functionality) -->
+<div class="modal" id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center;">
+    <div class="modal-content" style="max-width: 90%; max-height: 90%; position: relative;">
+        <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: var(--radius-md);">
+        <div id="modalCaption" style="color: white; text-align: center; margin-top: 1rem; font-size: 1.2rem;"></div>
+        <button onclick="closeModal()" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;">×</button>
+    </div>
+</div>
+
+<script>
+    // Gallery functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imageSrc = this.getAttribute('data-image');
+                const title = this.getAttribute('data-title');
+                
+                if (imageSrc) {
+                    document.getElementById('modalImage').src = imageSrc;
+                    document.getElementById('modalCaption').textContent = title;
+                    document.getElementById('imageModal').style.display = 'flex';
+                }
+            });
+            
+            // Add hover effect
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });
+    
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside the image
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x

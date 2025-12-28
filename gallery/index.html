@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link ">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link ">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link active">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Campus Gallery</h1>
+            <p class="hero-subtitle">Life at Imperial College of Nursing</p>
+        </div>
+    </div>
+</section>
+
+<!-- Events Highlight -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Events</h2>
+            <p class="section-subtitle">Highlights from our campus activities and events</p>
+        </div>
+
+        <!-- Event 1: Flood Relief Activity -->
+        <div style="margin-bottom: 4rem;">
+            <div class="event-header" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--light-gray);">
+                <div style="width: 50px; height: 50px; background: var(--gradient-red); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <div>
+                    <h2 style="color: var(--deep-blue);">Flood Relief Activity 2022</h2>
+                    <p style="color: var(--text-light);">Students and faculty providing healthcare support to flood-affected communities</p>
+                </div>
+            </div>
+
+            <div class="activity-grid">
+                <div class=".non-gallery">
+                    <p>In response to the devastating floods in Swat Valley, our students and faculty organized a comprehensive relief effort providing medical care, hygiene kits, and essential supplies to affected communities.</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Activities Included:</h4>
+                        <ul style="color: var(--text-light); padding-left: 1.2rem;">
+                            <li>Medical camps in flood-affected areas</li>
+                            <li>Distribution of hygiene and first aid kits</li>
+                            <li>Health education sessions</li>
+                            <li>Psychological support for affected families</li>
+                            <li>Collaboration with local health authorities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="gallery-grid" style="grid-template-columns: 1fr;">
+                    <div class="gallery-item fade-in" style="height: 400px;" data-image="https://via.placeholder.com/600x400/2A377D/FFFFFF?text=Flood+Relief+Camp" data-title="Medical Camp at Flood Relief Center">
+                        <img src="images/flood.jpeg" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Medical Relief Camp</h3>
+                            <p class="gallery-description">Students providing healthcare services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2: Student Week -->
+        <div style="margin-bottom: 4rem;">
+            <div class="event-header" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--light-gray);">
+                <div style="width: 50px; height: 50px; background: var(--gradient-blue); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    <h2 style="color: var(--deep-blue);">Annual Student Week 2023</h2>
+                    <p style="color: var(--text-light);">Week-long celebration of talent, creativity, and academic excellence</p>
+                </div>
+            </div>
+
+            <div class="activity-grid">
+                <div class="gallery-grid" style="grid-template-columns: 1fr; height:130%; margin-top: 0px;">
+                    <div class="gallery-item fade-in" style="height: 400px;" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Student+Week+Cultural+Show" data-title="Cultural Performance at Student Week">
+                        <div class="gallery-image">
+                            <img src="images/students-week.jpeg" style="width: 100%; height: 200%;" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Cultural Night</h3>
+                            <p class="gallery-description">Student performances and cultural shows</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=".non-gallery">
+                    <p>Our annual Student Week brings together students from all years for a celebration of talent, academic achievements, and cultural diversity. The event features various competitions, workshops, and social activities.</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Highlights:</h4>
+                        <ul style="color: var(--text-light); padding-left: 1.2rem;">
+                            <li>Academic quiz competitions</li>
+                            <li>Nursing skills competitions</li>
+                            <li>Cultural performances and drama</li>
+                            <li>Sports tournaments</li>
+                            <li>Guest lectures and workshops</li>
+                            <li>Award ceremonies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 3: Welcome Party -->
+        <div>
+            <div class="event-header" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--light-gray);">
+                <div style="width: 50px; height: 50px; background: var(--gradient-sky); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div>
+                    <h2 style="color: var(--deep-blue);">Welcome Party for F25 Batch</h2>
+                    <p style="color: var(--text-light);">Warm welcome to new nursing students</p>
+                </div>
+            </div>
+
+            <div class="activity-grid">
+                <div class=".non-gallery">
+                    <p>A grand welcome ceremony was organized for the Freshman 2025 batch, introducing new students to campus life, faculty members, and senior students. The event aimed to make new students feel at home in their nursing journey.</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Event Activities:</h4>
+                        <ul style="color: var(--text-light); padding-left: 1.2rem;">
+                            <li>Orientation sessions by faculty</li>
+                            <li>Campus tour and facility introduction</li>
+                            <li>Ice-breaking activities and games</li>
+                            <li>Meet and greet with senior students</li>
+                            <li>Cultural performances</li>
+                            <li>Welcome dinner</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="gallery-grid" style="grid-template-columns: 1fr;">
+                    <div class="gallery-item fade-in" style="height: 400px;" data-image="https://via.placeholder.com/600x400/C22028/FFFFFF?text=Welcome+Party+F25+Batch" data-title="Welcome Ceremony for New Students">
+                        <img src="images/orientation.jpeg"  class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Welcome Ceremony</h3>
+                            <p class="gallery-description">New students with faculty and seniors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div style="margin-bottom: 4rem;">
+    <div class="event-header" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--light-gray);">
+        <div style="width: 50px; height: 50px; background: var(--gradient-blue); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+            <i class="fas fa-compass"></i>
+        </div>
+        <div>
+            <h2 style="color: var(--deep-blue);">Orientation 2025</h2>
+            <p style="color: var(--text-light);">Comprehensive introduction to nursing education</p>
+        </div>
+    </div>
+
+            <div class="activity-grid">
+        <div class="gallery-grid" style="grid-template-columns: 1fr; height:130%; margin-top: 0px;">
+            <div class="gallery-item fade-in" style="height: 400px;" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Orientation+2025+Nursing+Students" data-title="Orientation Session for Nursing Students">
+                    <img class="gallery-item" src="images/orientation.jpeg" style="width: 100%; height: 400px; object-fit: cover;" alt="">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Orientation Session</h3>
+                    <p class="gallery-description">Students attending academic introduction</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <p>The Orientation 2025 program provided incoming nursing students with essential information about academic expectations, clinical practice guidelines, and campus resources. This comprehensive introduction sets the foundation for a successful nursing education journey.</p>
+            
+            <div style="margin-top: 1.5rem;">
+                <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Highlights:</h4>
+                <ul style="color: var(--text-light); padding-left: 1.2rem;">
+                    <li>Academic curriculum overview and expectations</li>
+                    <li>Clinical practice guidelines and safety protocols</li>
+                    <li>Library and learning resource center tour</li>
+                    <li>Student support services introduction</li>
+                    <li>Technology and online learning platforms</li>
+                    <li>Professional conduct and ethical guidelines</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>   
+    </div>
+</section>
+
+<!-- Campus Life Gallery -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Campus Life</h2>
+            <p class="section-subtitle">Moments from daily life at Imperial College of Nursing</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/2A377D/FFFFFF?text=Classroom+Learning" data-title="Interactive Classroom Session">
+                <img src="images/classroomlearn2.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Classroom Learning</h3>
+                    <p class="gallery-description">Interactive teaching sessions</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Lab+Practice" data-title="Skills Lab Training">
+                <img src="images/lablearn.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lab Practice</h3>
+                    <p class="gallery-description">Hands-on skills training</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/C22028/FFFFFF?text=Library+Study" data-title="Library Study Session">
+                <img src="images/librarystudy.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Library Study</h3>
+                    <p class="gallery-description">Quiet study and research</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/2A377D/FFFFFF?text=Sports+Activity" data-title="Sports Tournament">
+                <img src="/images/sports.jpg" style="width: 100%; object-fit: cover; height: inherit;" alt="">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Sports Tournament</h3>
+                    <p class="gallery-description">Annual sports competitions</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/1E68A4/FFFFFF?text=Seminar+Session" data-title="Guest Lecture Seminar">
+                <img src="images/classroomlearn.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Guest Lecture</h3>
+                    <p class="gallery-description">Expert seminar session</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="https://via.placeholder.com/600x400/C22028/FFFFFF?text=Group+Project" data-title="Group Project Work">
+                <img src="images/group.jpeg" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Group Project</h3>
+                    <p class="gallery-description">Collaborative learning</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Academic Activities -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Academic Activities</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-image">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Research Presentations</h3>
+                    <p class="card-text">Students presenting their research projects at annual research symposiums and conferences.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Graduation Ceremonies</h3>
+                    <p class="card-text">Annual graduation ceremonies celebrating the achievements of our nursing graduates.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <i class="fas fa-hand-holding-medical"></i>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Community Outreach</h3>
+                    <p class="card-text">Health camps and community service activities organized by students and faculty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x

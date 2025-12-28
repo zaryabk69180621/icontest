@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Lab | Imperial College of Nursing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<link href="images/logiicon.jpg" rel="icon">
+    
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <span>Kabal, Swat</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@imperialnursing.edu.pk</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 946 9240169</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" data-tooltip="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/929469240169" target="_blank" class="social-icon" data-tooltip="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="" class="logo">
+                            <img class="logo-icon" src="images/logiicon.jpg" alt="">
+                    <div class="logo-text">
+                        <h1>Imperial College of Nursing</h1>
+                        <p>Kabal, Swat - Excellence in Nursing Education</p>
+                    </div>
+                </a>
+                
+                <div class="header-actions">
+                    <a href="admissions" class="btn-primary">
+                        <i class="fas fa-file-alt"></i> Apply Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="nav-link ">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about" class="nav-link ">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages" class="nav-link ">
+                            <i class="fas fa-comments"></i> Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programs" class="nav-link ">
+                            <i class="fas fa-graduation-cap"></i> Programs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admissions" class="nav-link ">
+                            <i class="fas fa-file-signature"></i> Admissions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty" class="nav-link ">
+                            <i class="fas fa-chalkboard-teacher"></i> Faculty
+                        </a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="resources" class="nav-link ">
+                            <i class="fas fa-tools"></i> Resources 
+                        </a>
+                        <div class="dropdown">
+                            <a href="skills-lab"><i class="fas fa-flask"></i> Skills Lab</a>
+                            <a href="library"><i class="fas fa-book-medical"></i> Library</a>
+                            <a href="computer-lab"><i class="fas fa-laptop-medical"></i> Computer Lab</a>
+                            <a href="clinical-training"><i class="fas fa-hospital-alt"></i> Clinical Training</a>
+                             <a href="science-lab"><i class="fas fa-microscope"></i> Science Lab</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gallery" class="nav-link ">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="nav-link ">
+                            <i class="fas fa-address-book"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Page Header -->
+<section class="hero" style="min-height: 40vh;">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Anatomy Museum & Laboratory</h1>
+            <p class="hero-subtitle">Comprehensive study of human anatomy through specimens, models, and digital resources</p>
+        </div>
+    </div>
+</section>
+
+<!-- Museum Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Human Anatomy Learning Center</h2>
+            <p class="section-subtitle">Integrating traditional anatomical study with modern educational technology</p>
+        </div>
+
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <div class="hero-grid">
+                <div>
+                    <p>Our Anatomy Museum provides nursing students with an immersive learning environment featuring over 200 anatomical specimens, detailed models, and state-of-the-art digital resources. The facility supports comprehensive study of human structure essential for clinical practice and surgical understanding.</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Complete human skeleton collection</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem; margin-bottom: 1rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Organ system prosections</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="flex-shrink: 0; width: 30px; height: 30px; background: var(--gradient-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem;">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-dark); font-weight: 600;">Interactive 3D anatomy software</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="images/anat1.jpeg" class="image-placeholder" alt="Anatomy Museum Main Hall">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Museum Statistics -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Museum Statistics</h2>
+        </div>
+
+        <section class="stats-section">
+            <div class="">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">75+</div>
+                        <div class="stat-label">Misc Specimens</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Complete Skeletons</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Organ Models</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Interactive Stations</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Collections Overview -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Anatomy Collections</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-bone" style="color: var(--primary-red);"></i>
+                        Osteology Collection
+                    </h3>
+                    <p class="card-text">Complete skeletons and individual bones for detailed study of the human skeletal system.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Articulated skeletons</li>
+                        <li>Disarticulated bone sets</li>
+                        <li>Comparative anatomy specimens</li>
+                        <li>Pathological bone specimens</li>
+                        <li>Development stages collection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-heartbeat" style="color: var(--deep-blue);"></i>
+                        Organ Systems
+                    </h3>
+                    <p class="card-text">Prosection specimens and models of all major organ systems for system-based learning.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Cardiovascular system specimens</li>
+                        <li>Respiratory system models</li>
+                        <li>Digestive tract prosections</li>
+                        <li>Neurological specimens</li>
+                        <li>Urinary system models</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <i class="fas fa-brain" style="color: var(--sky-blue);"></i>
+                        Neuroanatomy
+                    </h3>
+                    <p class="card-text">Specialized collection for studying the nervous system, brain, and spinal cord anatomy.</p>
+                    <ul style="color: var(--text-light); margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Whole brain specimens</li>
+                        <li>Brain section models</li>
+                        <li>Spinal cord cross-sections</li>
+                        <li>Cranial nerve demonstrations</li>
+                        <li>Neurovascular specimens</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Museum Gallery -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Anatomy Museum Gallery</h2>
+            <p class="section-subtitle">Explore our comprehensive anatomy collections and learning spaces</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-image="images/anatomy-skeleton-hall.jpg" data-title="Skeleton Hall">
+                <img src="images/anat4.jpeg" class="gallery-image" alt="Skeleton Hall">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Skeleton Hall</h3>
+                    <p class="gallery-description">Complete articulated skeletons</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/anatomy-organ-display.jpg" data-title="Organ Systems Display">
+                <img src="images/anat1.jpeg" class="gallery-image" alt="Organ Systems Display">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Organ Systems Display</h3>
+                    <p class="gallery-description">Prosection specimens and models</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/anatomy-digital-lab.jpg" data-title="Digital Anatomy Lab">
+                <img src="images/anat3.jpeg" class="gallery-image" alt="Digital Anatomy Lab">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Digital Anatomy Lab</h3>
+                    <p class="gallery-description">Interactive 3D anatomy software stations</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/anatomy-muscle-models.jpg" data-title="Muscle Models">
+                <img src="images/anat5.jpeg" class="gallery-image" alt="Muscle Models">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Muscle Models</h3>
+                    <p class="gallery-description">Detailed musculoskeletal system</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/anatomy-brain-collection.jpg" data-title="Neuroanatomy Collection">
+                <img src="images/anat2.jpeg" class="gallery-image" alt="Neuroanatomy Collection">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Neuroanatomy Collection</h3>
+                    <p class="gallery-description">Brain and nervous system specimens</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item fade-in" data-image="images/anatomy-study-area.jpg" data-title="Study Area">
+                <img src="images/anat5.jpeg" class="gallery-image" alt="Study Area">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Study Area</h3>
+                    <p class="gallery-description">Individual and group study spaces</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Digital Resources -->
+
+
+<!-- Practical Sessions -->
+<section class="section" style="background: var(--light-gray);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Learning Sessions</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-calendar-alt" style="color: var(--primary-red);"></i>
+                        Museum Hours
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Monday - Friday: 8:00 AM - 8:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: 10:00 AM - 2:00 PM</li>
+                        <li>Guided tours available</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-chalkboard-teacher" style="color: var(--primary-red);"></i>
+                        Educational Sessions
+                    </h4>
+                    <ul style="color: var(--text-light);">
+                        <li>Faculty-guided dissections</li>
+                        <li>Peer teaching sessions</li>
+                        <li>Clinical correlation workshops</li>
+                        <li>Radiology-anatomy integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <h4 style="color: var(--deep-blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-book-open" style="color: var(--primary-red);"></i>
+                    Self-Directed Learning
+                </h4>
+                <p style="color: var(--text-light); margin-bottom: 1rem;">The museum supports various learning approaches:</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <span style="background: var(--light-gray); color: var(--text-light); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                        <i class="fas fa-search"></i> Specimen Identification
+                    </span>
+                    <span style="background: var(--light-gray); color: var(--text-light); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                        <i class="fas fa-puzzle-piece"></i> Structure-Function Correlation
+                    </span>
+                    <span style="background: var(--light-gray); color: var(--text-light); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                        <i class="fas fa-stethoscope"></i> Clinical Application
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Museum Etiquette -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Museum Etiquette & Guidelines</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-hands" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Respectful Conduct</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Maintain professional demeanor at all times</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-eye" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Observation Only</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Specimens are for visual study only</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-camera" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Photography Policy</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">No flash photography permitted</p>
+                </div>
+                
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+                    <i class="fas fa-volume-mute" style="color: var(--primary-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h5 style="color: var(--deep-blue); margin-bottom: 0.5rem;">Quiet Environment</h5>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Maintain low volume for concentration</p>
+                </div>
+            </div>
+            
+            <div style="padding-top: 2rem; border-top: 2px solid var(--light-gray);">
+                <h4 style="color: var(--deep-blue); margin-bottom: 1rem;">Prohibited Activities</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No touching specimens
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No food or drinks
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No disruptive behavior
+                    </span>
+                    <span style="background: #fee; color: var(--primary-red); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid var(--primary-red);">
+                        <i class="fas fa-ban"></i> No unauthorized photography
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Donor Recognition -->
+
+
+<!-- Image Modal (for gallery click functionality) -->
+<div class="modal" id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center;">
+    <div class="modal-content" style="max-width: 90%; max-height: 90%; position: relative;">
+        <img id="modalImage" src="" alt="" style="max-width: 100%; max-height: 100%; border-radius: var(--radius-md);">
+        <div id="modalCaption" style="color: white; text-align: center; margin-top: 1rem; font-size: 1.2rem;"></div>
+        <button onclick="closeModal()" style="position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;">×</button>
+    </div>
+</div>
+
+<script>
+    // Gallery functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imageSrc = this.getAttribute('data-image');
+                const title = this.getAttribute('data-title');
+                
+                if (imageSrc) {
+                    document.getElementById('modalImage').src = imageSrc;
+                    document.getElementById('modalCaption').textContent = title;
+                    document.getElementById('imageModal').style.display = 'flex';
+                }
+            });
+            
+            // Add hover effect
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });
+    
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside the image
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+</script>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logiicon.jpg" style="height: 70px; width: 70px;" class="logo-icon">
+                        
+                        <h3>Imperial College of Nursing</h3>
+                        <p>Kabal, Swat</p>
+                    </div>
+                    <p class="footer-description">
+                        Premier institution for nursing education in Swat Valley, 
+                        committed to producing highly skilled healthcare professionals 
+                        who serve with compassion and excellence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" data-tooltip="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/929469240169" target="_blank" class="social-link" data-tooltip="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs"><i class="fas fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="faculty"><i class="fas fa-chevron-right"></i> Faculty</a></li>
+                        <li><a href="gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources/skills-lab"><i class="fas fa-chevron-right"></i> Skills Lab</a></li>
+                        <li><a href="resources/library"><i class="fas fa-chevron-right"></i> Library</a></li>
+                        <li><a href="resources/computer-lab"><i class="fas fa-chevron-right"></i> Computer Lab</a></li>
+                        <li><a href="resources/clinical-training"><i class="fas fa-chevron-right"></i> Clinical Training</a></li>
+                        <li><a href="resources/transport"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Imperial College of Nursing<br>Kabal, Swat</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+92 946 9240169</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@imperialnursing.edu.pk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 4:00 PM<br>Sat & Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-university"></i>
+                        <span>KMU Affiliated</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>PNC Approved</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>HERA Certified</span>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>KPKHF Partner</span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Imperial College of Nursing. All rights reserved. | PNC Approved Institution</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>x
