@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
       // Mobile Menu Toggle - FIXED VERSION
+    console.log("tabbed");
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
     
