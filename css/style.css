@@ -2119,6 +2119,9 @@ display: flex;
     }    }
 
 @media (max-width: 600px) {
+    .hero h1{
+        letter-spacing:-1px
+    }
     .logo-area {
         gap: 1rem;
         text-align: center;
