@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (menuToggle && mainNav) {
         menuToggle.addEventListener('click', () => {
+            console.log("called");
             mainNav.classList.toggle('active');
             menuToggle.innerHTML = mainNav.classList.contains('active') 
                 ? '<i class="fas fa-times"></i>' 
