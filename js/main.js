@@ -1,12 +1,14 @@
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
+      // Mobile Menu Toggle - FIXED VERSION
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
     
     if (menuToggle && mainNav) {
-        menuToggle.addEventListener('click', () => {
-            console.log("called");
+        // Toggle menu on button click
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent bubbling to document click
             mainNav.classList.toggle('active');
             menuToggle.innerHTML = mainNav.classList.contains('active') 
                 ? '<i class="fas fa-times"></i>' 
@@ -15,7 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.header-actions') && !e.target.closest('.main-nav')) {
+            const isClickInsideNav = mainNav.contains(e.target);
+            const isClickOnToggle = menuToggle.contains(e.target);
+            
+            if (!isClickInsideNav && !isClickOnToggle && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+        
+        // Close menu on Escape key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mainNav.classList.contains('active')) {
                 mainNav.classList.remove('active');
                 menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
             }
@@ -24,9 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close menu on link click
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) { // Only on mobile
+                    mainNav.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
                 mainNav.classList.remove('active');
                 menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
+            }
         });
     }
     
